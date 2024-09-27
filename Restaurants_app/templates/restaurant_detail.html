@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{{ restaurant.name }}</h1>
+<p>Address: {{ restaurant.address }}</p>
+<p>Cuisine: {{ restaurant.cuisine_type }}</p>
+<p>Average Rating: {{ restaurant.average_rating }}</p>
+
+<h2>Reviews</h2>
+<ul>
+    {% for review in reviews %}
+        <li>{{ review.user.username }} rated {{ review.rating }} stars: {{ review.comment }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Reservations</h2>
+<ul>
+    {% for reservation in reservations %}
+        <li>{{ reservation.user.username }} reserved for {{ reservation.number_of_people }} people on {{ reservation.reservation_date }}</li>
+    {% endfor %}
+</ul>
+
+<!-- <h2>Leave a Review</h2> -->
+<!-- <form method="POST"> -->
+    <!-- Form for submitting a review -->
+<!-- </form> -->
+
+<!-- <h2>Make a Reservation</h2> -->
+<!-- <form method="POST"> -->
+    <!-- Form for submitting a reservation -->
+<!-- </form> -->
+
+{% endblock %}

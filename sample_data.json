@@ -1,0 +1,247 @@
+[
+    {
+        "model": "Restaurants_app.user",
+        "pk": 1,
+        "fields": {
+            "username": "john_doe",
+            "useremail": "john.doe@example.com"
+        }
+    },
+    {
+        "model": "Restaurants_app.user",
+        "pk": 2,
+        "fields": {
+            "username": "jane_smith",
+            "useremail": "jane.smith@example.com"
+        }
+    },
+    {
+        "model": "Restaurants_app.user",
+        "pk": 3,
+        "fields": {
+            "username": "michael_jones",
+            "useremail": "michael.jones@example.com"
+        }
+    },
+    {
+        "model": "Restaurants_app.user",
+        "pk": 4,
+        "fields": {
+            "username": "emily_clark",
+            "useremail": "emily.clark@example.com"
+        }
+    },
+    {
+        "model": "Restaurants_app.user",
+        "pk": 5,
+        "fields": {
+            "username": "david_taylor",
+            "useremail": "david.taylor@example.com"
+        }
+    },
+    {
+        "model": "Restaurants_app.restaurant",
+        "pk": 1,
+        "fields": {
+            "name": "Gourmet Bistro",
+            "address": "1234 Fine Dining Street, Foodville",
+            "cuisine_type": "French",
+            "average_rating": 4.5
+        }
+    },
+    {
+        "model": "Restaurants_app.restaurant",
+        "pk": 2,
+        "fields": {
+            "name": "Pizza Palace",
+            "address": "5678 Fast Food Lane, Pizza Town",
+            "cuisine_type": "Italian",
+            "average_rating": 4.0
+        }
+    },
+    {
+        "model": "Restaurants_app.restaurant",
+        "pk": 3,
+        "fields": {
+            "name": "Sushi World",
+            "address": "9876 Seafood Avenue, Ocean City",
+            "cuisine_type": "Japanese",
+            "average_rating": 4.8
+        }
+    },
+    {
+        "model": "Restaurants_app.restaurant",
+        "pk": 4,
+        "fields": {
+            "name": "Taco Fiesta",
+            "address": "3456 Fiesta Street, Taco Town",
+            "cuisine_type": "Mexican",
+            "average_rating": 4.2
+        }
+    },
+    {
+        "model": "Restaurants_app.restaurant",
+        "pk": 5,
+        "fields": {
+            "name": "Burger Joint",
+            "address": "1122 Burger Blvd, Grillsville",
+            "cuisine_type": "American",
+            "average_rating": 3.9
+        }
+    },
+    {
+        "model": "Restaurants_app.menu",
+        "pk": 1,
+        "fields": {
+            "restaurant": 1,
+            "dish_name": "Beef Wellington",
+            "price": "25.99",
+            "description": "A delicious beef tenderloin wrapped in puff pastry."
+        }
+    },
+    {
+        "model": "Restaurants_app.menu",
+        "pk": 2,
+        "fields": {
+            "restaurant": 2,
+            "dish_name": "Margherita Pizza",
+            "price": "12.99",
+            "description": "Classic Italian pizza with fresh mozzarella and basil."
+        }
+    },
+    {
+        "model": "Restaurants_app.menu",
+        "pk": 3,
+        "fields": {
+            "restaurant": 3,
+            "dish_name": "Salmon Sashimi",
+            "price": "15.99",
+            "description": "Freshly sliced raw salmon with a soy dipping sauce."
+        }
+    },
+    {
+        "model": "Restaurants_app.menu",
+        "pk": 4,
+        "fields": {
+            "restaurant": 4,
+            "dish_name": "Tacos al Pastor",
+            "price": "10.99",
+            "description": "Marinated pork served on corn tortillas with pineapple."
+        }
+    },
+    {
+        "model": "Restaurants_app.menu",
+        "pk": 5,
+        "fields": {
+            "restaurant": 5,
+            "dish_name": "Classic Cheeseburger",
+            "price": "9.99",
+            "description": "Grilled beef patty with cheese, lettuce, and tomato."
+        }
+    },
+    {
+        "model": "Restaurants_app.review",
+        "pk": 1,
+        "fields": {
+            "restaurant": 1,
+            "user": 1,
+            "rating": 5,
+            "comment": "Amazing food and excellent service!",
+            "date": "2024-09-23"
+        }
+    },
+    {
+        "model": "Restaurants_app.review",
+        "pk": 2,
+        "fields": {
+            "restaurant": 2,
+            "user": 1,
+            "rating": 4,
+            "comment": "Great pizza but the wait was a bit long.",
+            "date": "2024-09-22"
+        }
+    },
+    {
+        "model": "Restaurants_app.review",
+        "pk": 3,
+        "fields": {
+            "restaurant": 3,
+            "user": 2,
+            "rating": 5,
+            "comment": "Best sushi in town, very fresh!",
+            "date": "2024-09-20"
+        }
+    },
+    {
+        "model": "Restaurants_app.review",
+        "pk": 4,
+        "fields": {
+            "restaurant": 4,
+            "user": 3,
+            "rating": 4,
+            "comment": "Tasty tacos but could use more spice.",
+            "date": "2024-09-19"
+        }
+    },
+    {
+        "model": "Restaurants_app.review",
+        "pk": 5,
+        "fields": {
+            "restaurant": 5,
+            "user": 4,
+            "rating": 3,
+            "comment": "Decent burger but nothing special.",
+            "date": "2024-09-18"
+        }
+    },
+    {
+        "model": "Restaurants_app.reservation",
+        "pk": 1,
+        "fields": {
+            "restaurant": 1,
+            "user": 1,
+            "reservation_date": "2024-09-30T19:30:00Z",
+            "number_of_people": 2
+        }
+    },
+    {
+        "model": "Restaurants_app.reservation",
+        "pk": 2,
+        "fields": {
+            "restaurant": 2,
+            "user": 1,
+            "reservation_date": "2024-09-29T18:00:00Z",
+            "number_of_people": 4
+        }
+    },
+    {
+        "model": "Restaurants_app.reservation",
+        "pk": 3,
+        "fields": {
+            "restaurant": 3,
+            "user": 2,
+            "reservation_date": "2024-09-25T19:00:00Z",
+            "number_of_people": 3
+        }
+    },
+    {
+        "model": "Restaurants_app.reservation",
+        "pk": 4,
+        "fields": {
+            "restaurant": 4,
+            "user": 3,
+            "reservation_date": "2024-09-28T17:30:00Z",
+            "number_of_people": 2
+        }
+    },
+    {
+        "model": "Restaurants_app.reservation",
+        "pk": 5,
+        "fields": {
+            "restaurant": 5,
+            "user": 4,
+            "reservation_date": "2024-09-27T18:30:00Z",
+            "number_of_people": 5
+        }
+    }
+]

@@ -1,0 +1,10 @@
+Restaurant_review_system
+
+Restaurants_app
+
+Models:
+
+Restaurant	- name(char),address(txt),cuisine_type(char),average_rating(float)
+Menu		- restaurant(fk),dish_name(char),price(decimal),description(txt)
+Review		- restaurant(fk),user(fk),rating(int),comment(txt),date(date)
+Reservation	- restaurant(fk),user(fk),reservation_date(date),number_of_people(int)
